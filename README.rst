@@ -22,15 +22,7 @@ Deployment
 Requirements: `Docker <https://www.docker.com/>`_, `docker-compose
 <https://docs.docker.com/compose/>`_.
 
-Download and extract demo file:
-
-.. code-block:: bash
-
-  curl https://get.eva-ics.com/demos/eva_basic.tgz -o eva_basic.tgz
-  tar xzvf eva_basic.tgz
-  cd eva_basic
-
-Execute *docker-compose up* to deploy containers
+* Execute *docker-compose up* to deploy containers
 
 Management
 ==========
