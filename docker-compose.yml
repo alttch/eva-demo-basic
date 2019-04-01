@@ -10,6 +10,12 @@ services:
       - product=all
       - layout=enterprise
       - MASTERKEY=demo123
+      - DEFAULTKEY=
+      - OPKEY=
+      - cloud_manager=1
+      - deploy=
+      - download=
+      - debug=
     image: altertech/eva-ics
     volumes:
         - runtime:/runtime
