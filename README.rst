@@ -14,7 +14,7 @@ Network and containers
 ======================
 
 * **eva_mqtt** local MQTT server (mosquitto), *10.27.5.200*
-* **eva_1** EVA ICS node, *10.27.5.10:*
+* **eva_basic_1** EVA ICS node, *10.27.5.10:*
 
 Deployment
 ==========
@@ -30,7 +30,7 @@ Management
 http://10.27.5.10:8828 - SFA API/primary operator interface (empty, framework
 files only).
 
-From command line: *docker exec -it eva_1 eva-shell*
+From command line: *docker exec -it eva_basic_1 eva-shell*
 
 Default masterkey is: *demo123*
 
