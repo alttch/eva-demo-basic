@@ -13,7 +13,6 @@ Node configuration is empty.
 Network and containers
 ======================
 
-* **eva_mqtt** local MQTT server (mosquitto), *10.27.5.200*
 * **eva_basic_1** EVA ICS node, *10.27.5.10:*
 
 Deployment
@@ -32,7 +31,7 @@ files only).
 
 From command line: *docker exec -it eva_basic_1 eva-shell*
 
-Default masterkey is: *demo123*
+Default masterkey is: *demo123*, default *operator* password: *123*
 
 Components:
 

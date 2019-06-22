@@ -5,13 +5,14 @@ services:
     hostname: eva_1
     environment:
       - auto_install=1
-      - mqtt=10.27.5.200
+      - mqtt=
       - link=1
       - product=all
       - layout=enterprise
       - MASTERKEY=demo123
       - DEFAULTKEY=
       - OPKEY=
+      - OPPASSWD=123
       - cloud_manager=1
       - deploy=
       - download=
@@ -23,13 +24,6 @@ services:
     networks:
       ic:
         ipv4_address: 10.27.5.10
-
-  mqtt:
-    container_name: eva_basic_mqtt
-    image: eclipse-mosquitto
-    networks:
-      ic:
-        ipv4_address: 10.27.5.200
 
 networks:
   ic:
