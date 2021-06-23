@@ -19,8 +19,11 @@ services:
       - debug=
     image: altertech/eva-ics
     volumes:
-        - ui:/ui
-        - backup:/backup
+        - ui:/mnt/ui
+        - pvt:/mnt/pvt
+        - backup:/mnt/backup
+        - runtime:/mnt/runtime
+        - log:/mnt/log
     networks:
       ic:
         ipv4_address: 10.27.5.10
@@ -35,4 +38,7 @@ networks:
 
 volumes:
   ui:
+  pvt:
   backup:
+  runtime:
+  log:
