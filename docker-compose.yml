@@ -4,26 +4,17 @@ services:
     container_name: eva_basic_1
     hostname: eva_1
     environment:
-      - auto_install=1
-      - mqtt=
-      - link=1
-      - product=all
-      - layout=enterprise
       - MASTERKEY=demo123
-      - DEFAULTKEY=
-      - OPKEY=
-      - OPPASSWD=123
-      - cloud_manager=1
-      - deploy=
-      - download=
-      - debug=
+      - DEFAULTKEY=default123
     image: altertech/eva-ics
     volumes:
-        - ui:/mnt/ui
-        - pvt:/mnt/pvt
-        - backup:/mnt/backup
-        - runtime:/mnt/runtime
-        - log:/mnt/log
+        - ./data/ui:/mnt/ui
+        - ./data/pvt:/mnt/pvt
+        - ./data/backup:/mnt/backup
+        - ./data/runtime:/mnt/runtime
+        - ./data/etc:/mnt/etc
+        - ./data/log:/mnt/log
+        - ./data/var:/mnt/var
     networks:
       ic:
         ipv4_address: 10.27.5.10
@@ -41,4 +32,6 @@ volumes:
   pvt:
   backup:
   runtime:
+  etc:
   log:
+  var:
